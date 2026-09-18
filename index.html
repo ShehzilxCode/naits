@@ -227,5 +227,13 @@
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
   <script src="js/content.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // Safety net: if a CDN script failed and the intro never ran, clear it so the page is usable.
+    setTimeout(function () {
+      var intro = document.querySelector(".intro");
+      if (intro && (!window.gsap || !window.Lenis)) { intro.remove(); document.body.classList.add("no-motion"); }
+    }, 2500);
+    setTimeout(function () { var i = document.querySelector(".intro"); if (i) i.remove(); }, 9000);
+  </script>
 </body>
 </html>
