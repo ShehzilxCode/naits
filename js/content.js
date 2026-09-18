@@ -30,8 +30,9 @@ window.SITE = {
 
   /* ---------- HERO ---------- */
   hero: {
-    image: "assets/images/artist-apple.jpg",     // current official artist photo (Apple Music, 1638px)
-    position: "center 38%",                      // focal point (CSS background-position)
+    image: "assets/images/hero-banner.jpg",      // official YouTube channel banner (2048px) — alt: artist-apple.jpg / artist-yt.jpg
+    position: "62% 30%",                         // focal point (CSS background-position)
+    filter: "grayscale(0.15) contrast(1.06) brightness(1)",   // this image is already dark & graded; override the default darkening
     listenUrl: "https://open.spotify.com/track/12eG3kPPnYhNaOmxaZe96p",
     watchUrl: "https://www.youtube.com/watch?v=Gs8M_jEJOjE",
   },
