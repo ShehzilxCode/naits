@@ -341,12 +341,23 @@
       .to([".hero__corner", ".scroll-hint"], { opacity: 1, y: 0, duration: 1 }, 0.9)
       .to(".nav", { opacity: 1, duration: 1 }, 0.9);
 
-    // Reduced motion or a deep link (#music etc.): skip the intro
+    // Deep link (#music etc.): skip the intro and land on the section
     const deepLink = location.hash.length > 1 && $(location.hash);
-    if (reduced || deepLink) {
+    if (deepLink) {
       intro.remove();
       heroIn.progress(1);
-      if (deepLink) requestAnimationFrame(() => lenis.scrollTo(deepLink, { immediate: true, force: true }));
+      requestAnimationFrame(() => lenis.scrollTo(deepLink, { immediate: true, force: true }));
+      return;
+    }
+
+    // Reduced motion (e.g. Windows "Animation effects" off): still show the
+    // title card, but static — a hold and a fade instead of the choreography.
+    if (reduced) {
+      gsap.set(letters, { yPercent: 0, opacity: 1 });
+      gsap.set(".intro__line", { scaleX: 1, backgroundColor: "#d9a066" });
+      count.textContent = "100";
+      heroIn.progress(1);
+      gsap.to(intro, { opacity: 0, duration: 0.6, delay: 1.2, onComplete: () => intro.remove() });
       return;
     }
 
