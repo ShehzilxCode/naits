@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>NAITSMUSIC — Official</title>
+  <meta name="description" content="Naits (@naitsmusic) — singer-songwriter and rapper from Oslo, Norway. New single “no one else” out now. Music, videos, visuals." />
+  <meta name="theme-color" content="#070707" />
+  <meta property="og:title" content="NAITSMUSIC — Official" />
+  <meta property="og:description" content="Naits — Oslo, Norway. New single “no one else” out now." />
+  <meta property="og:image" content="assets/images/no-one-else.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23070707'/%3E%3Ctext x='50%25' y='58%25' dominant-baseline='middle' text-anchor='middle' font-family='Impact,Arial Narrow,sans-serif' font-size='40' fill='%23f2ede4'%3EN%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== ATMOSPHERE ===== -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- ===== CURSOR (desktop only) ===== -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+  </div>
+
+  <!-- ===== INTRO ===== -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro__word" data-word="NAITSMUSIC"></div>
+    <div class="intro__line"></div>
+    <div class="intro__meta"><span>OFFICIAL</span><span class="intro__count">00</span></div>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand" data-cursor="small">
+      <span class="nav__brand-mark">N</span>
+      <span class="nav__brand-name" data-artist-name>NAITSMUSIC</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" class="nav__link"><span>Home</span></a>
+      <a href="#music" class="nav__link"><span>Music</span></a>
+      <a href="#videos" class="nav__link"><span>Videos</span></a>
+      <a href="#about" class="nav__link"><span>About</span></a>
+      <a href="#contact" class="nav__link"><span>Contact</span></a>
+    </nav>
+
+    <div class="nav__right">
+      <div class="nav__socials" data-socials="icons"></div>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__bg"></div>
+    <div class="menu__inner">
+      <nav class="menu__links" aria-label="Mobile">
+        <a href="#home"    class="menu__link"><i>01</i><span>Home</span></a>
+        <a href="#music"   class="menu__link"><i>02</i><span>Music</span></a>
+        <a href="#videos"  class="menu__link"><i>03</i><span>Videos</span></a>
+        <a href="#about"   class="menu__link"><i>04</i><span>About</span></a>
+        <a href="#contact" class="menu__link"><i>05</i><span>Contact</span></a>
+      </nav>
+      <div class="menu__foot">
+        <div class="menu__socials" data-socials="text"></div>
+        <div class="menu__handle" data-artist-handle>@naitsmusic</div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="hero__media">
+        <div class="hero__img" data-img="hero" data-parallax="0.25"></div>
+        <div class="hero__light"></div>
+      </div>
+
+      <div class="hero__corner hero__corner--tl"><span class="dot dot--live"></span><span>REC</span></div>
+      <div class="hero__corner hero__corner--tr"><span data-artist-location></span><span>/</span><span data-year></span></div>
+
+      <h1 class="hero__title" aria-label="NAITSMUSIC">
+        <span class="hero__title-line hero__title-line--back"><span class="split" data-split>NAITS</span></span>
+        <span class="hero__title-line hero__title-line--front"><span class="split" data-split>MUSIC</span></span>
+      </h1>
+
+      <div class="hero__bottom">
+        <div class="hero__info">
+          <p class="hero__tag" data-reveal><span data-artist-tagline></span></p>
+          <div class="hero__ctas">
+            <a class="btn btn--solid" data-hero-listen data-magnetic data-cursor="small">
+              <span class="btn__label">Listen Now</span>
+              <span class="btn__arrow">→</span>
+            </a>
+            <a class="btn btn--ghost" data-hero-watch data-magnetic data-cursor="small">
+              <span class="btn__play"></span>
+              <span class="btn__label">Watch</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#music" class="scroll-hint" aria-label="Scroll down">
+          <span class="scroll-hint__text">Scroll</span>
+          <span class="scroll-hint__track"><span class="scroll-hint__thumb"></span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== TICKER ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="ticker"></div>
+    </div>
+
+    <!-- ===== MUSIC ===== -->
+    <section class="section music" id="music">
+      <header class="section__head">
+        <span class="section__index">01 / Music</span>
+        <h2 class="section__title" data-split>Releases</h2>
+      </header>
+
+      <!-- Featured release -->
+      <article class="featured" id="featured"></article>
+
+      <!-- Discography list -->
+      <div class="disco">
+        <div class="disco__head">
+          <span>Nº</span><span>Title</span><span>Type</span><span>Year</span><span>Listen</span>
+        </div>
+        <div class="disco__list" id="disco"></div>
+        <div class="disco__preview" id="discoPreview"></div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEOS ===== -->
+    <section class="section videos" id="videos">
+      <header class="section__head">
+        <span class="section__index">02 / Videos</span>
+        <h2 class="section__title" data-split>Visuals</h2>
+      </header>
+
+      <div class="videos__feature" id="videoFeature"></div>
+      <div class="videos__grid" id="videoGrid"></div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="about__giant" aria-hidden="true"><span data-artist-short data-drift>NAITS</span></div>
+
+      <div class="about__grid">
+        <div class="about__media">
+          <div class="about__img" data-img="about" data-parallax="0.12"></div>
+          <span class="about__img-cap" id="aboutCap"></span>
+        </div>
+
+        <div class="about__text">
+          <span class="section__index">03 / About</span>
+          <p class="about__lead" data-reveal id="aboutLead"></p>
+          <div class="about__body" id="aboutBody"></div>
+          <dl class="about__facts" id="aboutFacts"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARCHIVE ===== -->
+    <section class="section archive" id="archive">
+      <header class="section__head">
+        <span class="section__index">04 / Archive</span>
+        <h2 class="section__title" data-split>Visual Archive</h2>
+      </header>
+      <div class="archive__grid" id="archiveGrid"></div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <span class="section__index">05 / Contact</span>
+      <h2 class="contact__title" id="contactTitle"></h2>
+
+      <div class="contact__grid" id="contactGrid"></div>
+
+      <div class="contact__socials" data-socials="text"></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__giant" aria-hidden="true"><span data-artist-name>NAITSMUSIC</span></div>
+    <div class="footer__row">
+      <span class="footer__copy">© <span data-year></span> <span data-artist-name>NAITSMUSIC</span>. All rights reserved.</span>
+      <nav class="footer__links" id="footerLinks"></nav>
+      <div class="footer__socials" data-socials="icons"></div>
+      <a href="#home" class="footer__top" data-cursor="small">Top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ===== NOW PLAYING ===== -->
+  <a class="np" id="nowPlaying" data-cursor="small">
+    <span class="np__wave"><i></i><i></i><i></i><i></i><i></i></span>
+    <span class="np__text">
+      <span class="np__label">Now playing</span>
+      <span class="np__title"></span>
+      <span class="np__time"></span>
+    </span>
+    <span class="np__bar"></span>
+  </a>
+
+  <!-- ===== VIDEO MODAL ===== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__bg" data-close></div>
+    <button class="modal__close" data-close aria-label="Close">Close</button>
+    <div class="modal__frame"><div class="modal__embed" id="modalEmbed"></div></div>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
