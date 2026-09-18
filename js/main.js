@@ -100,6 +100,7 @@
     // Hero
     setImage($(".hero__img"), S.hero.image, { label: "Artist photo", size: "1600×2000", figure: true });
     if (S.hero.position) $(".hero__img").style.backgroundPosition = S.hero.position;
+    if (S.hero.filter) $(".hero__img").style.filter = S.hero.filter;
     $("[data-hero-listen]").href = S.hero.listenUrl;
     $("[data-hero-watch]").href = S.hero.watchUrl;
 
@@ -335,7 +336,7 @@
 
     const heroIn = gsap.timeline({ defaults: { ease: "expo.out" } })
       .to(heroWords, { yPercent: 0, duration: 1.4, stagger: 0.12 }, 0)
-      .fromTo(".hero__img", { scale: 1.18 }, { scale: 1.06, duration: 2.6, ease: "power2.out" }, 0)
+      .fromTo(".hero__img", { scale: 1.14 }, { scale: 1.02, duration: 2.6, ease: "power2.out" }, 0)
       .to(".hero__tag", { opacity: 1, y: 0, duration: 1.1 }, 0.5)
       .to(".hero__ctas .btn", { opacity: 1, y: 0, duration: 1, stagger: 0.1 }, 0.7)
       .to([".hero__corner", ".scroll-hint"], { opacity: 1, y: 0, duration: 1 }, 0.9)
@@ -438,7 +439,7 @@
 
     // Parallax & scrubbed motion (desktop + tablet only)
     mm.add("(min-width: 861px) and (prefers-reduced-motion: no-preference)", () => {
-      gsap.to(".hero__img", { yPercent: 16, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+      gsap.to(".hero__img", { yPercent: 10, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
       gsap.to(".hero__title", { yPercent: -70, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
       gsap.to([".hero__bottom", ".hero__corner"], { opacity: 0, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "55% top", scrub: true } });
 
